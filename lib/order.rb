@@ -15,4 +15,8 @@ attr_reader :dishes
 		@dishes.delete(dish)
 	end
 
+	def total_cost
+		@dishes.inject(0) { |result, dish| result + dish.price }
+	end
+
 end
