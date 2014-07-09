@@ -12,5 +12,4 @@ describe 'Dish' do
 		expect(dish.price).to eq '8'
 	end
 
-
 end
