@@ -18,6 +18,7 @@ describe 'Menu' do
 	end
 
 	it 'can have a dish added to the menu' do
+		expect(menu_with_dishes.dishes).to eq ['bacon_burger', 'chicken_burger']
 		menu_with_dishes.add('veggie_burger')
 		expect(menu_with_dishes.dishes).to eq ['bacon_burger', 'chicken_burger', 'veggie_burger']
 	end

@@ -6,4 +6,8 @@ attr_reader :dishes
 		@dishes = dishes
 	end
 
+	def add(dishes)
+		@dishes << dishes
+	end
+
 end
