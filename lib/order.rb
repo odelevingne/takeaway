@@ -6,8 +6,13 @@ attr_reader :dishes
 		@dishes = dishes
 	end
 
-	def add(dishes)
-		@dishes << dishes
+	def add(dish, quantity=1)
+		dishes_to_add = quantity.times.map { dish }
+		@dishes.concat(dishes_to_add)
+	end
+
+	def remove(dish)
+		@dishes.delete(dish)
 	end
 
 end
