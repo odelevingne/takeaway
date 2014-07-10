@@ -2,7 +2,8 @@ require 'customer'
 
 describe 'Customer' do 
 
-	let (:customer) { Customer.new('Oliver', '07824430733') }
+	let (:customer) { Customer.new('Oliver', '+447824430733') }
+	let (:order)    { double :order, dishes: []}
 
 	context 'Creating the customer:' do
 
@@ -11,16 +12,9 @@ describe 'Customer' do
 		end
 
 		it 'is created with a phone number' do
-			expect(customer.number).to eq '07824430733'
+			expect(customer.number).to eq '+447824430733'
 		end
 
 	end
-
-	# context 'placing the order' do
-
-	# 	it 
-
-	# end
-
 
 end

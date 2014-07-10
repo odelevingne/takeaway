@@ -3,8 +3,9 @@ require 'order'
 describe 'Order' do
 
 	let (:order) { Order.new }
-	let (:bacon_burger) { double :dish, name: 'bacon_burger', price: 8}
-	
+	let (:bacon_burger) 	{ double :dish, name: 'bacon_burger', price: 8	 }
+	let (:chicken_burger) { double :dish, name: 'chicken_burger', price: 9 }
+
 	it 'is created with no dishes' do
 		expect(order.dishes).to eq []
 	end
@@ -29,7 +30,8 @@ describe 'Order' do
 
 	it 'can show the final order value' do
 		order.add(bacon_burger, 2)
-		expect(order.total_cost).to eq 16
+		order.add(chicken_burger, 3)
+		expect(order.total_cost).to eq 43
 	end
 
 end
