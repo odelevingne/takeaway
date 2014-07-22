@@ -3,7 +3,6 @@ require 'customer'
 describe 'Customer' do 
 
 	let (:customer) { Customer.new('Oliver', '+447824430733') }
-	let (:order)    { double :order, dishes: []}
 
 	context 'Creating the customer:' do
 

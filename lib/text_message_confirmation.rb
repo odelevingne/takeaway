@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'twilio-ruby'
-require 'customer'
 
 module TextMessageConfirmation
 
@@ -14,8 +13,8 @@ module TextMessageConfirmation
 			auth_token  = 'b1d7c58e900082106d5f5204013aaf1d'
 			@client     = Twilio::REST::Client.new account_sid, auth_token
 
-			message = @client.account.sms.messages.create(:body => "Thanks for your order #{@name}. It will arrive by #{delivery_time}",
-			    :to   => "#{@number}",     
+			message = @client.account.sms.messages.create(:body => "Thanks for your order #{customer.name}. It will arrive by #{delivery_time}",
+			    :to   => customer.number,     
 			    :from => "+441476500067")
 
 	end

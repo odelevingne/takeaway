@@ -3,8 +3,8 @@ require 'order'
 describe 'Order' do
 
 	let (:order) { Order.new }
-	let (:bacon_burger) 	{ double :dish, name: 'bacon_burger', price: 8	 }
-	let (:chicken_burger) { double :dish, name: 'chicken_burger', price: 9 }
+	let (:bacon_burger) 	{ double :dish, name: 'Bacon Burger', price: 8	 }
+	let (:chicken_burger) { double :dish, name: 'Chicken Burger', price: 9 }
 
 	it 'is created with no dishes' do
 		expect(order.dishes).to eq []
