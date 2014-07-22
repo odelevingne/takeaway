@@ -34,4 +34,6 @@ describe 'Order' do
 		expect(order.total_cost).to eq 43
 	end
 
+	
+
 end

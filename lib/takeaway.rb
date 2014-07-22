@@ -19,4 +19,9 @@ class Takeaway
 		@order
 	end
 
+	def confirm_order(order)
+		confirmation_message
+		@order = nil
+	end
+
 end

@@ -23,7 +23,11 @@ describe 'Takeaway' do
 	end
 
 	it 'can place an order and send a text message' do
-
+		best_burgers.stub(:confirmation_message).and_return("Thanks for your order Oliver. It will arrive by 2.00pm")
+		expect(best_burgers.place_order(new_order, ollie))
+		expect(best_burgers.outstanding_orders).to eq new_order
+		best_burgers.confirm_order(new_order)
+		expect(best_burgers.outstanding_orders).to eq nil
 	end
 
 end
