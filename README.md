@@ -1,6 +1,6 @@
 Takeaway
 ===
-Create a Takeaway program that can create dishes, menus and orders. When the order is placed in irb, an SMS confirmation is sent to your phone.
+Create a Takeaway program that can create dishes, menus and orders. When the order is placed in irb, an SMS confirmation is sent to your phone
 
 Objectives of exercise
 ----
