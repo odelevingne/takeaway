@@ -12,6 +12,21 @@ Technologies used
 - Rspec
 - Twilio
 
+How to run it
+----
+```sh
+git clone git@github.com:odelevingne/takeaway.git
+cd takeaway
+irb
+require './lib/customer.rb'
+require './lib/dish.rb
+require './lib/takeaway.rb
+require './lib/menu.rb
+require './lib/order.rb
+require './lib/text_message_confirmation.rb
+
+``` 
+
 How to run tests
 ----
 ```sh
