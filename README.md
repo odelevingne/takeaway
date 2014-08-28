@@ -19,11 +19,11 @@ git clone git@github.com:odelevingne/takeaway.git
 cd takeaway
 irb
 require './lib/customer.rb'
-require './lib/dish.rb
-require './lib/takeaway.rb
-require './lib/menu.rb
-require './lib/order.rb
-require './lib/text_message_confirmation.rb
+require './lib/dish.rb'
+require './lib/takeaway.rb'
+require './lib/menu.rb'
+require './lib/order.rb'
+require './lib/text_message_confirmation.rb'
 
 ``` 
 
